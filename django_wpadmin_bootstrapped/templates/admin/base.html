@@ -135,14 +135,18 @@
     {% endif %}
 
     <!-- Content -->
-    <div id="page-wrapper" class="{% block coltype %}colM{% endblock %}">
+    <div id="page-wrapper" class="{% if is_popup %}page-popup {% endif %}{% block coltype %}colM{% endblock %}">
 
+        {% if not is_popup %}
         <div class="row">
             <div class="col-sm-12">
                 {% block breadcrumbs %}
                 {% endblock %}
             </div>
         </div>
+        {% else %}
+        <br>
+        {% endif %}
 
         {% block navbar %}
         <div class="navbar navbar-default">
