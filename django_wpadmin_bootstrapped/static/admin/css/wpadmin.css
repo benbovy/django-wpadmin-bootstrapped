@@ -1,0 +1,38 @@
+/*
+ * Overrides sb-admin-2 and admin-bootstrapped
+ */
+
+body {
+  padding-top: 51px;
+  padding-bottom: 0;
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+.alert {
+  padding: 10px;
+}
+
+.h2, h2 {
+  font-size: 20px;
+}
+
+.control-label label {
+  font-size: 13px;
+}
+
+.form-control {
+  height: 30px;
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+.help-block {
+  font-size: 11px;
+  color: #bbb;
+}
+
+.btn {
+  padding: 4px 8px;
+  font-size: 13px;
+}
