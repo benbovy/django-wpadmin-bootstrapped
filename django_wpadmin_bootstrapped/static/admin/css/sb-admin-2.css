@@ -5,7 +5,7 @@
  */
 
 body {
-    background-color: #222;
+    background-color: #ddd;
 }
 
 #wrapper {
@@ -23,22 +23,26 @@ body {
         position: inherit;
         margin: 0 0 0 220px;
         padding: 0 30px;
-        border-left: 1px solid #e7e7e7;
+        border-left: 1px solid #aaa;
     }
 }
 
 .navbar-fixed-top {
-  background-color: #222;
-  color: #999;
-  border-bottom: 1px solid #000;
+  background-color: #f3ac22;
+  color: #eee;
+  border-bottom: 1px solid #d37c02;
 }
 
 .navbar-fixed-top .navbar-brand {
-  color: #ccc;
+  color: #efefef;
+}
+
+.navbar-fixed-top .navbar-brand:hover {
+  color: #fff;
 }
 
 .sidebar {
-  background-color: #222;
+  background-color: #ddd;
 }
 
 .navbar-top-links {
@@ -56,18 +60,18 @@ body {
 .navbar-top-links li a {
     padding: 15px;
     min-height: 50px;
-    color: #999 !important;
-    background-color: #222 !important;
+    color: #fefefe !important;
+    background-color: #f3ac22 !important;
 }
 
 .navbar-top-links li a:hover,
 .navbar-top-links li a:focus {
-    background-color: #111 !important;
-    color: #ccc !important;
+    background-color: #d37c02 !important;
+    color: #eee !important;
 }
 
 .navbar-top-links .dropdown-menu {
-  background-color: #222;
+  background-color: #fff;
 }
 
 .navbar-top-links .dropdown-menu li {
@@ -81,6 +85,12 @@ body {
 .navbar-top-links .dropdown-menu li a {
     padding: 3px 20px;
     min-height: 0;
+    background-color: #fff !important;
+    color: #111 !important;
+}
+
+.navbar-top-links .dropdown-menu li a:hover {
+  background-color: #eee !important;
 }
 
 .navbar-top-links .dropdown-menu li a div {
@@ -114,6 +124,7 @@ body {
 .sidebar .sidebar-nav.navbar-collapse {
     padding-right: 0;
     padding-left: 0;
+    padding-top: 0;
 }
 
 .sidebar .sidebar-search {
@@ -125,15 +136,15 @@ body {
 }
 
 .sidebar ul li a {
-  background-color: #222;
-  color: #999;
+  background-color: #ddd;
+  color: #444;
 }
 
 .sidebar ul li a:hover,
 .sidebar ul li a:focus,
 .sidebar ul li a.active {
-  background-color: #111;
-  color: #ccc;
+  background-color: #ccc;
+  color: #555;
 }
 
 .sidebar .arrow {
