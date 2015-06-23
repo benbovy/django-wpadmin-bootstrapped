@@ -42,12 +42,12 @@
 </head>
 {% load i18n %}
 
-<body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}">
+<body class="{% if is_popup %}popup {% endif %}{% if not user.is_authenticated %}no-navigation {% endif %}{% block bodyclass %}{% endblock %}">
 
 <!-- Container -->
 <div id="wrapper">
 
-    {% if not is_popup %}
+    {% if not is_popup and user.is_authenticated %}
     <!-- Header -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
@@ -142,7 +142,7 @@
     {% endif %}
 
     <!-- Content -->
-    <div id="page-wrapper" class="{% if is_popup %}page-popup {% endif %}{% block coltype %}colM{% endblock %}">
+    <div id="page-wrapper" class="{% if is_popup or not user.is_authenticated %}full-page {% endif %}{% block coltype %}colM{% endblock %}">
 
         {% if not is_popup %}
         <div class="row">

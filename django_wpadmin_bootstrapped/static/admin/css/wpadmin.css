@@ -14,7 +14,11 @@ body {
   background-color: #fff;
 }
 
-.page-popup {
+.no-navigation {
+  padding-top: 0;
+}
+
+.full-page {
   margin-left: 0 !important;
 }
 
